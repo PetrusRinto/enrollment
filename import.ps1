@@ -7,7 +7,7 @@ $assetPath  = ".\excel\$AssetFileName"
 $targetPath = ".\csv\template.csv"
 $outPath    = ".\result_$AssetFileName"
 
-# Read IDs (første kolonne alltid)
+# Read IDs (always the first header)
 $assetRows = Import-Csv $assetPath
 $firstColumn = ($assetRows[0].PSObject.Properties.Name)[0]
 $assetIds = $assetRows | ForEach-Object { $_.$firstColumn } | Where-Object { $_ }
