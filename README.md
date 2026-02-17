@@ -1,5 +1,6 @@
-# Simple "enrollment" script in Powershell
-Created this script for bulk import of devices in Microsoft Partner Center, because I'm lazy.
+# Simple script-tool for device-import in Microsoft Partner Center.
+Powershell utility for transforming Microsoft Product Key exports from barcode-scan
+into a Partner Center-compatible enrollment CSV format.
 
 ## Goal
 Wanted to use my iPhone to scan the barcode instead of manually typing the microsoft product key for each device that needed to be enrolled. In a scenario where you need to do this in bulks; this was a must.\
